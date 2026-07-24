@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Happy Birthday Thor ❤️</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- 特效層 -->
+
+    <div id="effects"></div>
+
+    <!-- Loading -->
+
+    <section id="loading">
+      <div class="loader-star">✦</div>
+
+      <h1>Loading Love...</h1>
+    </section>
+
+    <!-- 首頁 -->
+
+    <div id="home">
+      <div class="cute-star">✦</div>
+
+      <h1>
+        <span> Happy Birthday </span>
+
+        <br />
+
+        <strong> THOR </strong>
+      </h1>
+      <div class="photo-frame">
+        <img src="image/photo.jpg" alt="Thor and Princess" />
+      </div>
+
+      <div class="love-message">
+        💙 丸那公主準備了一份<br />
+
+        專屬生日驚喜 💙
+      </div>
+
+      <button id="startBtn">🎁 Tap To Start ❤️</button>
+
+      <div class="hint">每天都有一份秘密禮物等你開啟 ✨</div>
+    </div>
+    <div class="countdown-box">
+      ⏰ 距離下一份生日驚喜
+
+      <div id="countdown">00:00:00</div>
+    </div>
+
+    <!-- 盲盒區 -->
+
+    <section id="game" style="display: none">
+      <h2>Thor 的生日盲盒</h2>
+
+      <div id="giftContainer"></div>
+
+      <div id="status"></div>
+    </section>
+
+    <!-- 獎品視窗 -->
+
+    <div id="rewardModal">
+      <div class="rewardBox">
+        <h2>🎉 恭喜 Thor！</h2>
+
+        <div id="ticketCard">
+          <div class="ticket-header">🎂 Happy Birthday Thor</div>
+
+          <div class="ticket-title" id="ticketTitle"></div>
+
+          <div class="ticket-text" id="ticketText"></div>
+
+          <div class="ticket-footer">🎁 Birthday Gift 2026</div>
+        </div>
+
+        <button id="closeReward">收下祝福 ❤️</button>
+      </div>
+    </div>
+    <!-- 最終生日彩蛋 -->
+
+    <div id="finalSurprise">
+      <div class="surpriseBox">
+        <h1>✨ 特別彩蛋 ✨</h1>
+
+        <h2>Thor ❤️</h2>
+
+        <p>
+          謝謝你出現在我的生命裡。
+
+          <br /><br />
+
+          希望未來的每一天，
+          <br />
+          都能一起創造更多幸福回憶。
+
+          <br /><br />
+
+          🎂 Happy Birthday
+        </p>
+
+        <button id="closeSurprise">收下祝福 ❤️</button>
+      </div>
+    </div>
+    <!-- 音效控制 -->
+
+    <button id="soundToggle">🔊</button>
+
+    <!-- 音效 -->
+
+    <audio id="bgMusic" loop>
+      <source src="assets/music/bgm.mp3" />
+    </audio>
+
+    <audio id="openSound">
+      <source src="assets/sound/open.mp3" />
+    </audio>
+
+    <!-- 管理入口 -->
+
+    <div id="adminTrigger">✦</div>
+
+    <!-- 管理視窗 -->
+
+    <div id="adminPanel" style="display: none">
+      <div class="admin-box">
+        <h2>🔐 Thor Birthday Admin</h2>
+
+        <input id="adminPassword" type="password" placeholder="輸入密碼" />
+
+        <button id="loginAdmin">登入</button>
+
+        <div id="adminContent">
+          <button id="resetToday">重置今天開箱</button>
+
+          <button id="clearAll">清除全部紀錄</button>
+
+          <button id="showTickets">查看券列表</button>
+
+          <div id="adminResult"></div>
+        </div>
+      </div>
+    </div>
+    <button id="adminBtn">🔐</button>
+    <script src="script.js"></script>
+  </body>
+</html>
